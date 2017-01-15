@@ -1,5 +1,20 @@
 # striking
 
+## LATEST
+"single bell templates" now has cells that take an initial template,
+use it to extract most of the bell strikes, then overlay those bell
+strikes to make another template, then repeat.
+This seems to converge to excellent template derived from the recording
+(but seeded with a single bell strike template).  The template discriminates
+clearly between hand and back stroke - picking out one, but not the other.
+
+A key element is looking at the sharpness of the peak produced by the
+correlation of the template with the ringing.  I have been using a
+measurement of the peak minus the average of the values at 4 samples on
+either side of the peak.  A threshold of .02 seems to work quite well, but
+this should probably be fit to the data, by detecting the threshold range
+in which the peaks are appropriately spaced apart.
+
 ## NMF TODO
 1. Approach to expressing signals as probabilities of bell strike times.
 1. Algorithm to optimize number of noise channels in nmf.
