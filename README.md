@@ -32,3 +32,5 @@ a. individual recordings and consistent microphone placement and acoustics
 b. a strategy for extracting the single bell spectrogram from the
 recording.
 
+## Install hints
+a. conda install -c conda-forge librosa
